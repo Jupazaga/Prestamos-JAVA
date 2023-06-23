@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6337d99e-1ba8-4252-844a-304da91fd62b" name="Changes" comment="" />
+    <list default="true" id="6337d99e-1ba8-4252-844a-304da91fd62b" name="Changes" comment="created Persistence for Users">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/model/UsersEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,8 +33,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "5c8ca3a0-62ba-4be9-b0a2-625c0b3ad9f4",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "D:/Proyectos/Practicas/Prestamos-JAVA",
@@ -78,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687539168802</updated>
       <workItem from="1687539170388" duration="523000" />
+      <workItem from="1687540445952" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="Starting web project">
       <option name="closed" value="true" />
@@ -87,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687539635956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created Forms Home, Login, SignUp and for a New Debt">
+      <option name="closed" value="true" />
+      <created>1687541145053</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687541145053</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Starting web project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting web project" />
+    <MESSAGE value="created Forms Home, Login, SignUp and for a New Debt" />
+    <MESSAGE value="created Persistence for Users" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Persistence for Users" />
   </component>
 </project>
