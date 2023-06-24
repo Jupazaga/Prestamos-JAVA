@@ -15,11 +15,11 @@
         <label for="id">Cellphone number</label>
         <input type="number" id="id" name="id">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+        <input type="text" id="name" name="name">
         <label for="user">User</label>
-        <input type="text" name="user" id="user">
+        <input type="text" id="user" name="user" >
         <label for="password">Password</label>
-        <input type="text" name="password" id="password">
+        <input type="text" id="password" name="password" >
         <input type="submit">
     </form>
 </body>

@@ -3,12 +3,13 @@ package com.jp.prestamosjava.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "users", schema = "prestamos")
-public class UsersEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@Table(name = "user", schema = "prestamos")
+public class UserEntity {
+//This tag works for automatic values on the table, in this case I wanted to use the phone number as an id, so the id would be manual and not automatic.
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private String id;
+    private int id;
     @Basic
     @Column(name = "name")
     private String name;
@@ -19,11 +20,22 @@ public class UsersEntity {
     @Column(name = "password")
     private String password;
 
-    public String getId() {
+    public UserEntity() {
+
+    }
+
+    public UserEntity(int id, String name, String user, String password) {
+        this.id = id;
+        this.name = name;
+        this.user = user;
+        this.password = password;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
