@@ -14,8 +14,8 @@
     <form method="post" action="${pageContext.request.contextPath}/NewDebt">
         <label for="id">Cellphone number</label>
         <input type="number" id="id" name="id" required >
-        <label for="debt">Amount Borrowed</label>
-        <input type="number" name="total_debt" id="debt" required>
+        <label for="amount">Amount Borrowed</label>
+        <input type="number" name="amount" id="amount" required>
         <label for="lastPayment"> Loan Date</label>
         <input type="date" name="lastPayment" id="lastPayment" required>
         <input type="submit">

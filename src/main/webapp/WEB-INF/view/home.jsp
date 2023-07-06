@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Jp
@@ -6,11 +7,20 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
+
 <html>
 <head>
     <title>Home</title>
 </head>
 <body>
  <h1>Home</h1>
+ <ul>
+     <c:forEach items="${debts}" var="debt">
+         <li>
+             ${debt.lender} - ${debt.debtor}
+         </li>
+     </c:forEach>
+ </ul>
+ <a href="newDebtForm.jsp">New Debt</a>
 </body>
 </html>
