@@ -5,18 +5,14 @@ import com.jp.prestamosjava.model.UserEntity;
 import com.jp.prestamosjava.utils.JPAUtils;
 import jakarta.persistence.EntityManager;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/SignUp")
-public class SignUp extends HttpServlet {
+public class SignUp implements Action {
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-
+    public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String user = request.getParameter("user");
@@ -36,5 +32,6 @@ public class SignUp extends HttpServlet {
         }finally {
             entityManager.close();
         }
+        return "forward:newDebtForm.jsp";
     }
 }

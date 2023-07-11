@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
-
+<c:url value="/home" var="linkServlet"/>
 <html>
 <head>
     <title>Home</title>
@@ -21,6 +21,7 @@
          </li>
      </c:forEach>
  </ul>
- <a href="newDebtForm.jsp">New Debt</a>
+
+ <a href="${linkServlet}?action=NewDebtForm">New Debt</a>
 </body>
 </html>

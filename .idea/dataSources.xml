@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="prestamos@localhost" uuid="5c8ca3a0-62ba-4be9-b0a2-625c0b3ad9f4">
+    <data-source source="LOCAL" name="prestamos/Hibernate" uuid="806cc95d-4392-4ef9-9964-19ad8283cf8d">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+D:/Proyectos/Practicas/Prestamos-JAVA/src/main/resources/META-INF/persistence.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/prestamos</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>

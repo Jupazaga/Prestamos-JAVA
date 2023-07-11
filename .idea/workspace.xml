@@ -9,7 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6337d99e-1ba8-4252-844a-304da91fd62b" name="Changes" comment="" />
+    <list default="true" id="6337d99e-1ba8-4252-844a-304da91fd62b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/NewDebtForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/SignUpForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/servlet/AuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/servlet/MonitoringFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/DebtsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/DebtsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/NewDebt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/NewDebt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/SignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/action/SignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/prestamosjava/servlet/ControllerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/include.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newDebtForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newDebtForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newDebtorForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newDebtorForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/signUpForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/signUpForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -192,6 +215,10 @@
       <workItem from="1688430387928" duration="3937000" />
       <workItem from="1688502962560" duration="10429000" />
       <workItem from="1688602913948" duration="3887000" />
+      <workItem from="1688912312774" duration="1418000" />
+      <workItem from="1688915233773" duration="2748000" />
+      <workItem from="1688999024568" duration="5207000" />
+      <workItem from="1689110831083" duration="8087000" />
     </task>
     <task id="LOCAL-00001" summary="Starting web project">
       <option name="closed" value="true" />
@@ -233,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688606165386</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding libraries">
+      <option name="closed" value="true" />
+      <created>1688912394532</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688912394532</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +280,7 @@
     <MESSAGE value="created Persistence for Users" />
     <MESSAGE value="Persistence for Users fixed, and created SignUp action" />
     <MESSAGE value="Created Form for Debt and Home have a List of Debts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Form for Debt and Home have a List of Debts" />
+    <MESSAGE value="Adding libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding libraries" />
   </component>
 </project>
