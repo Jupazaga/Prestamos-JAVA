@@ -9,11 +9,11 @@ import java.sql.Date;
 public class DebtEntity {
     @Id
     @Column(name = "lender")
-    private int lender;
+    private Long lender;
 
     @Id
     @Column(name = "debtor")
-    private int debtor;
+    private Long debtor;
 
     @Basic
     @Column(name = "last_payment")
@@ -23,34 +23,31 @@ public class DebtEntity {
     @Column(name = "amount")
     private Long amount;
 
-    @Basic
-    @Column(name = "total_debt")
-    private Long totalDebt;
 
     public DebtEntity() {
 
     }
 
-    public DebtEntity(int lender, int debtor, Date lastPayment, Long amount) {
+    public DebtEntity(Long lender, Long debtor, Date lastPayment, Long amount) {
         this.lender = lender;
         this.debtor = debtor;
         this.lastPayment = lastPayment;
         this.amount = amount;
     }
 
-    public int getLender() {
+    public Long getLender() {
         return lender;
     }
 
-    public void setLender(int lender) {
+    public void setLender(Long lender) {
         this.lender = lender;
     }
 
-    public int getDebtor() {
+    public Long getDebtor() {
         return debtor;
     }
 
-    public void setDebtor(int debtor) {
+    public void setDebtor(Long debtor) {
         this.debtor = debtor;
     }
 
@@ -69,13 +66,4 @@ public class DebtEntity {
     public void setAmount(Long amount) {
         this.amount = amount;
     }
-
-    public Long getTotalDebt() {
-        return totalDebt;
-    }
-
-    public void setTotalDebt(Long totalDebt) {
-        this.totalDebt = totalDebt;
-    }
-
 }

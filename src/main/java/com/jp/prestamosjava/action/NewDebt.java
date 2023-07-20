@@ -18,7 +18,7 @@ public class NewDebt implements Action {
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         UserEntity user = (UserEntity) session.getAttribute("loginUser");
-        int debtor = Integer.parseInt(request.getParameter("id"));
+        Long debtor = Long.valueOf(request.getParameter("id"));
         Long amount = (long) Integer.parseInt(request.getParameter("amount"));
         Date lastPayment = Date.valueOf(request.getParameter("lastPayment"));
         DebtEntity debt = new DebtEntity(user.getId(), debtor, lastPayment, amount);

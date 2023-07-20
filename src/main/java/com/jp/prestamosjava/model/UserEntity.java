@@ -9,7 +9,7 @@ public class UserEntity {
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    private Long id;
     @Basic
     @Column(name = "name")
     private String name;
@@ -24,18 +24,18 @@ public class UserEntity {
 
     }
 
-    public UserEntity(int id, String name, String user, String password) {
+    public UserEntity(Long id, String name, String user, String password) {
         this.id = id;
         this.name = name;
         this.user = user;
         this.password = password;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

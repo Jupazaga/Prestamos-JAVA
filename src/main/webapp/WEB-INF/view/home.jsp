@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<c:url value="/home" var="linkServlet"/>
+<c:url value="home" var="linkServlet"/>
 <html>
 <head>
     <title>Home</title>
@@ -17,7 +17,7 @@
  <ul>
      <c:forEach items="${debts}" var="debt">
          <li>
-             ${debt.lender} - ${debt.debtor}
+             ${debt.lender} - ${debt.debtor} - ${debt.amount}
          </li>
      </c:forEach>
  </ul>

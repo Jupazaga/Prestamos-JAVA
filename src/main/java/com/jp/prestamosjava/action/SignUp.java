@@ -13,7 +13,7 @@ import java.io.IOException;
 public class SignUp implements Action {
 
     public String execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        Long id = Long.valueOf(request.getParameter("id"));
         String name = request.getParameter("name");
         String user = request.getParameter("user");
         String password = request.getParameter("password");

@@ -5,8 +5,10 @@ import java.lang.reflect.InvocationTargetException;
 
 import com.jp.prestamosjava.action.Action;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebFilter;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
-
+@WebServlet(urlPatterns = "home")
 public class ControllerFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain) throws IOException, ServletException {
@@ -18,14 +20,15 @@ public class ControllerFilter implements Filter {
         String className = "com.jp.prestamosjava.action." + actionParameter;
 
         Class<?> clazz;
-        String page;
+        String page = null;
         try {
             clazz = Class.forName(className);
             Object object = clazz.getDeclaredConstructor().newInstance();
             Action action = (Action) object;
             page = action.execute(request, response);
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-            throw new RuntimeException(e);
+            System.out.println("Page Not Found");
+            request.getRequestDispatcher("WEB-INF/view/home.jsp").forward(request, response);
         }
         if (page != null){
             String[] typeAndDirection = page.split(":");
